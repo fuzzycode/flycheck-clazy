@@ -99,6 +99,7 @@ If nil, `flycheck-clazy' will try to automatically determine the root directory 
 ;;;###autoload
 (defun flycheck-clazy-setup ()
   "Setup flycheck clazy."
+  (interactive)
   (add-to-list 'flycheck-checkers 'c/c++-clazy t))
 
 (provide 'flycheck-clazy)
